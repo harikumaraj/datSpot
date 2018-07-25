@@ -1,0 +1,63 @@
+import { StyleSheet, Dimensions } from 'react-native';
+
+let {height, width}= Dimensions.get("window");
+
+export default StyleSheet.create({
+    container:{
+        flex:1,
+        backgroundColor:"#000"
+    },
+    backButtonWrapper:{
+        height:height*0.1,
+        paddingHorizontal:"5%",
+        justifyContent:"center"
+    },
+    backButtonContainer:{
+        flexDirection:"row",
+        width:"20%",
+        height:"50%",
+        alignItems:"center"
+    },
+    backButtonText:{
+        color:"#fff",
+        fontSize:14
+    },
+    contentContainer:{
+        flex:1,
+        paddingHorizontal:"5%",
+        paddingTop:"5%"
+    },
+    heading:{
+        color:"#fff",
+        fontSize:15,
+        fontWeight:"bold",
+    },
+    headingWrapper:{
+        flexDirection:"row",
+        height:height*0.08
+    },
+    headingContainer:{
+        justifyContent:"space-around",
+        flex:2
+    },
+    counterWrapper:{
+        flex:1,
+        alignItems:"center",
+        justifyContent:"center"
+    },
+    counterContainer:{
+        flexDirection:"row",
+        height:"80%",
+        width:"80%",
+        borderRadius:50,
+        overflow:"hidden"
+    },
+    counterButtonContainer:{
+        flex:1,
+    },
+    counterButtonWrapper:{
+      flex:1,
+      alignItems:"center",
+      justifyContent:"center"
+    }
+});
